@@ -1,0 +1,15 @@
+# dependencies and tool caches (dev tooling runs via npx only)
+node_modules/
+.firebase/
+*.log
+firebase-debug.log*
+ui-debug.log*
+database-debug.log*
+
+# OS and editor
+.DS_Store
+.vscode/
+.idea/
+
+# local Lighthouse/Playwright scratch
+.lighthouseci/
