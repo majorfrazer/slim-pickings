@@ -1,0 +1,223 @@
+/* SLIM PICKINGS — styles.css
+   Phase 0: palette tokens and the structural minimum. The design pass is Phase 2. */
+
+:root {
+  /* Palette (docs/build-brief.md, Design Direction) */
+  --night: #0b1a2b;
+  --snow: #f5f1e8;
+  --altiplano: #c8372d;
+  --brass: #d4a017;
+  --wool: #e9dcc3;
+  --ink: #141414;
+
+  /* Roles, dark by default: it is night on a mountain */
+  --bg: var(--night);
+  --fg: var(--snow);
+  --muted: var(--wool);
+  --accent: var(--altiplano);
+  --link: var(--brass);
+  --panel: #12253a;
+  --rule: rgb(245 241 232 / 0.16);
+
+  /* Type and measure */
+  --font-display: 'Bebas Neue', 'Anton', Impact, 'Arial Narrow', system-ui, sans-serif;
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --measure: 65ch;
+  --max-width: 1100px;
+  --gutter: 16px;
+
+  color-scheme: dark light;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    --bg: var(--snow);
+    --fg: var(--ink);
+    --muted: #4a4136;
+    --panel: var(--wool);
+    --rule: rgb(20 20 20 / 0.16);
+    --link: #8a6708;
+  }
+}
+
+:root[data-theme='light'] {
+  --bg: var(--snow);
+  --fg: var(--ink);
+  --muted: #4a4136;
+  --panel: var(--wool);
+  --rule: rgb(20 20 20 / 0.16);
+  --link: #8a6708;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 4rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+}
+
+h1 {
+  font-size: clamp(2.75rem, 10vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 5vw, 2.75rem);
+}
+
+a {
+  color: var(--link);
+}
+
+:focus-visible {
+  outline: 3px solid var(--brass);
+  outline-offset: 3px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -100px;
+  padding: 0.5rem 1rem;
+  background: var(--brass);
+  color: var(--ink);
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: var(--gutter);
+}
+
+/* Sticky nav with the altitude badge */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem var(--gutter);
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+}
+
+.site-nav__home {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+  color: var(--fg);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav__list {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.site-nav__list a {
+  color: var(--fg);
+  text-decoration: none;
+  padding: 0.25rem 0;
+}
+
+.site-nav__list a:hover {
+  color: var(--link);
+}
+
+.altitude-badge {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: var(--brass);
+  border: 2px solid var(--brass);
+  border-radius: 999px;
+  padding: 0.1rem 0.6rem;
+  white-space: nowrap;
+}
+
+/* Sections */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+main > section {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+main > section p {
+  max-width: var(--measure);
+}
+
+.hero {
+  padding-top: 4rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid var(--brass);
+  border-radius: 4px;
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.button--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--snow);
+}
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem var(--gutter);
+  color: var(--muted);
+}
