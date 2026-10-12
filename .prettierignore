@@ -1,0 +1,6 @@
+# PM-owned copy and contracts: never reformatted (docs/press-kit.md is diffed verbatim)
+*.md
+docs/
+# tool output and caches
+.firebase/
+node_modules/

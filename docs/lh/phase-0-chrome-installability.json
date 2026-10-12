@@ -1,0 +1,33 @@
+{
+  "chrome": "155.0.8059.39",
+  "manifestUrl": "https://slim-pickings--phase-0-3o3wb00o.web.app/manifest.json",
+  "manifestErrors": [],
+  "installabilityErrors": [],
+  "serviceWorker": {
+    "registrations": [
+      {
+        "scope": "https://slim-pickings--phase-0-3o3wb00o.web.app/",
+        "state": "activated"
+      }
+    ],
+    "controller": true,
+    "caches": [
+      "slim-pickings-v0.0.1-phase0"
+    ],
+    "cached": [
+      "/",
+      "/index.html",
+      "/styles.css",
+      "/app.js",
+      "/manifest.json",
+      "/assets/icons/favicon.svg",
+      "/assets/icons/icon-192.png",
+      "/assets/icons/icon-512.png"
+    ]
+  },
+  "controlledAfterReload": true,
+  "offlineReload": {
+    "ok": true,
+    "title": "SLIM PICKINGS"
+  }
+}

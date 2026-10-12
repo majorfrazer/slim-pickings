@@ -1,0 +1,884 @@
+{
+  "lighthouseVersion": "11.7.1",
+  "requestedUrl": "https://slim-pickings--phase-0-3o3wb00o.web.app/",
+  "mainDocumentUrl": "https://slim-pickings--phase-0-3o3wb00o.web.app/",
+  "finalDisplayedUrl": "https://slim-pickings--phase-0-3o3wb00o.web.app/",
+  "finalUrl": "https://slim-pickings--phase-0-3o3wb00o.web.app/",
+  "fetchTime": "2026-10-12T21:51:26.380Z",
+  "gatherMode": "navigation",
+  "runWarnings": [],
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+    "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36",
+    "benchmarkIndex": 3160.5,
+    "credits": {}
+  },
+  "audits": {
+    "viewport": {
+      "id": "viewport",
+      "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+      "description": "A `<meta name=\"viewport\">` not only optimizes your app for mobile screen sizes, but also prevents [a 300 millisecond delay to user input](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/). [Learn more about using the viewport meta tag](https://developer.chrome.com/docs/lighthouse/pwa/viewport/).",
+      "score": 1,
+      "scoreDisplayMode": "metricSavings",
+      "warnings": [],
+      "metricSavings": {
+        "INP": 0
+      },
+      "details": {
+        "type": "debugdata",
+        "viewportContent": "width=device-width, initial-scale=1"
+      },
+      "guidanceLevel": 3
+    },
+    "installable-manifest": {
+      "id": "installable-manifest",
+      "title": "Web app manifest and service worker meet the installability requirements",
+      "description": "Service worker is the technology that enables your app to use many Progressive Web App features, such as offline, add to homescreen, and push notifications. With proper service worker and manifest implementations, browsers can proactively prompt users to add your app to their homescreen, which can lead to higher engagement. [Learn more about manifest installability requirements](https://developer.chrome.com/docs/lighthouse/pwa/installable-manifest/).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "warnings": [],
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": [],
+        "debugData": {
+          "type": "debugdata",
+          "manifestUrl": "https://slim-pickings--phase-0-3o3wb00o.web.app/manifest.json"
+        }
+      }
+    },
+    "splash-screen": {
+      "id": "splash-screen",
+      "title": "Configured for a custom splash screen",
+      "description": "A themed splash screen ensures a high-quality experience when users launch your app from their homescreens. [Learn more about splash screens](https://developer.chrome.com/docs/lighthouse/pwa/splash-screen/).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "failures": [],
+            "isParseFailure": false,
+            "hasStartUrl": true,
+            "hasIconsAtLeast144px": true,
+            "hasIconsAtLeast512px": true,
+            "fetchesIcon": true,
+            "hasPWADisplayValue": true,
+            "hasBackgroundColor": true,
+            "hasThemeColor": true,
+            "hasShortName": true,
+            "shortNameLength": false,
+            "hasName": true,
+            "hasMaskableIcon": true
+          }
+        ]
+      }
+    },
+    "themed-omnibox": {
+      "id": "themed-omnibox",
+      "title": "Sets a theme color for the address bar.",
+      "description": "The browser address bar can be themed to match your site. [Learn more about theming the address bar](https://developer.chrome.com/docs/lighthouse/pwa/themed-omnibox/).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "details": {
+        "type": "debugdata",
+        "items": [
+          {
+            "failures": [],
+            "themeColor": "#0b1a2b",
+            "isParseFailure": false,
+            "hasStartUrl": true,
+            "hasIconsAtLeast144px": true,
+            "hasIconsAtLeast512px": true,
+            "fetchesIcon": true,
+            "hasPWADisplayValue": true,
+            "hasBackgroundColor": true,
+            "hasThemeColor": true,
+            "hasShortName": true,
+            "shortNameLength": false,
+            "hasName": true,
+            "hasMaskableIcon": true
+          }
+        ]
+      }
+    },
+    "maskable-icon": {
+      "id": "maskable-icon",
+      "title": "Manifest has a maskable icon",
+      "description": "A maskable icon ensures that the image fills the entire shape without being letterboxed when installing the app on a device. [Learn about maskable manifest icons](https://developer.chrome.com/docs/lighthouse/pwa/maskable-icon-audit/).",
+      "score": 1,
+      "scoreDisplayMode": "binary"
+    },
+    "content-width": {
+      "id": "content-width",
+      "title": "Content is sized correctly for the viewport",
+      "description": "If the width of your app's content doesn't match the width of the viewport, your app might not be optimized for mobile screens. [Learn how to size content for the viewport](https://developer.chrome.com/docs/lighthouse/pwa/content-width/).",
+      "score": 1,
+      "scoreDisplayMode": "binary"
+    },
+    "pwa-cross-browser": {
+      "id": "pwa-cross-browser",
+      "title": "Site works cross-browser",
+      "description": "To reach the most number of users, sites should work across every major browser. [Learn about cross-browser compatibility](https://developer.chrome.com/docs/lighthouse/pwa/pwa-cross-browser/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "pwa-page-transitions": {
+      "id": "pwa-page-transitions",
+      "title": "Page transitions don't feel like they block on the network",
+      "description": "Transitions should feel snappy as you tap around, even on a slow network. This experience is key to a user's perception of performance. [Learn more about page transitions](https://developer.chrome.com/docs/lighthouse/pwa/pwa-page-transitions/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    },
+    "pwa-each-page-has-url": {
+      "id": "pwa-each-page-has-url",
+      "title": "Each page has a URL",
+      "description": "Ensure individual pages are deep linkable via URL and that URLs are unique for the purpose of shareability on social media. [Learn more about providing deep links](https://developer.chrome.com/docs/lighthouse/pwa/pwa-each-page-has-url/).",
+      "score": null,
+      "scoreDisplayMode": "manual"
+    }
+  },
+  "configSettings": {
+    "output": [
+      "json"
+    ],
+    "maxWaitForFcp": 30000,
+    "maxWaitForLoad": 45000,
+    "pauseAfterFcpMs": 1000,
+    "pauseAfterLoadMs": 1000,
+    "networkQuietThresholdMs": 1000,
+    "cpuQuietThresholdMs": 1000,
+    "formFactor": "mobile",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "throttlingMethod": "simulate",
+    "screenEmulation": {
+      "mobile": true,
+      "width": 412,
+      "height": 823,
+      "deviceScaleFactor": 1.75,
+      "disabled": false
+    },
+    "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Mobile Safari/537.36",
+    "auditMode": false,
+    "gatherMode": false,
+    "clearStorageTypes": [
+      "file_systems",
+      "shader_cache",
+      "service_workers",
+      "cache_storage"
+    ],
+    "disableStorageReset": false,
+    "debugNavigation": false,
+    "channel": "cli",
+    "usePassiveGathering": false,
+    "disableFullPageScreenshot": false,
+    "skipAboutBlank": false,
+    "blankPage": "about:blank",
+    "ignoreStatusCode": false,
+    "budgets": null,
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "precomputedLanternData": null,
+    "onlyAudits": null,
+    "onlyCategories": [
+      "pwa"
+    ],
+    "skipAudits": null
+  },
+  "categories": {
+    "pwa": {
+      "title": "PWA",
+      "description": "These checks validate the aspects of a Progressive Web App. [Learn what makes a good Progressive Web App](https://web.dev/articles/pwa-checklist).",
+      "manualDescription": "These checks are required by the baseline [PWA Checklist](https://web.dev/articles/pwa-checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+      "supportedModes": [
+        "navigation"
+      ],
+      "auditRefs": [
+        {
+          "id": "installable-manifest",
+          "weight": 2,
+          "group": "pwa-installable"
+        },
+        {
+          "id": "splash-screen",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "themed-omnibox",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "content-width",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "viewport",
+          "weight": 2,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "maskable-icon",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "pwa-cross-browser",
+          "weight": 0
+        },
+        {
+          "id": "pwa-page-transitions",
+          "weight": 0
+        },
+        {
+          "id": "pwa-each-page-has-url",
+          "weight": 0
+        }
+      ],
+      "id": "pwa",
+      "score": 1
+    }
+  },
+  "categoryGroups": {
+    "metrics": {
+      "title": "Metrics"
+    },
+    "load-opportunities": {
+      "title": "Opportunities",
+      "description": "These suggestions can help your page load faster. They don't [directly affect](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) the Performance score."
+    },
+    "budgets": {
+      "title": "Budgets",
+      "description": "Performance budgets set standards for the performance of your site."
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "description": "More information about the performance of your application. These numbers don't [directly affect](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) the Performance score."
+    },
+    "pwa-installable": {
+      "title": "Installable"
+    },
+    "pwa-optimized": {
+      "title": "PWA Optimized"
+    },
+    "a11y-best-practices": {
+      "title": "Best practices",
+      "description": "These items highlight common accessibility best practices."
+    },
+    "a11y-color-contrast": {
+      "title": "Contrast",
+      "description": "These are opportunities to improve the legibility of your content."
+    },
+    "a11y-names-labels": {
+      "title": "Names and labels",
+      "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-navigation": {
+      "title": "Navigation",
+      "description": "These are opportunities to improve keyboard navigation in your application."
+    },
+    "a11y-aria": {
+      "title": "ARIA",
+      "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-language": {
+      "title": "Internationalization and localization",
+      "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+    },
+    "a11y-audio-video": {
+      "title": "Audio and video",
+      "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+    },
+    "a11y-tables-lists": {
+      "title": "Tables and lists",
+      "description": "These are opportunities to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+    },
+    "seo-mobile": {
+      "title": "Mobile Friendly",
+      "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn how to make pages mobile-friendly](https://developers.google.com/search/mobile-sites/)."
+    },
+    "seo-content": {
+      "title": "Content Best Practices",
+      "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+    },
+    "seo-crawl": {
+      "title": "Crawling and Indexing",
+      "description": "To appear in search results, crawlers need access to your app."
+    },
+    "best-practices-trust-safety": {
+      "title": "Trust and Safety"
+    },
+    "best-practices-ux": {
+      "title": "User Experience"
+    },
+    "best-practices-browser-compat": {
+      "title": "Browser Compatibility"
+    },
+    "best-practices-general": {
+      "title": "General"
+    },
+    "hidden": {
+      "title": ""
+    }
+  },
+  "stackPacks": [],
+  "fullPageScreenshot": {
+    "screenshot": {
+      "data": "data:image/webp;base64,UklGRlgzAABXRUJQVlA4WAoAAAAgAAAAmwEA7QYASUNDUMgBAAAAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADZWUDggajEAALB2AZ0BKpwB7gY/EYi9WSwopqUg9Hj5gCIJZ278QtnhV8bpOnHs6APdD+7m1elBzte7I+sp/RPUA86v1j/9Tkr3lb/B/2T1w/M/2z/Ufbz6n+bT55onZL+z/Nn99f63989tn81/yvtq9KflrqC+2t2fAF+k/3XzB/lf+//nvVH7N+wB5W/8nw2PxH/W/af4Bf5l/kPWA/1PKR9oef92Mww4Eb8HvMNiJF67QMaO/bXEQgC/IaMjuSOF9PWymzW7iYgdbYUYIQv478kCP3jZDX7eD3vqSd2yKQMFIyjDjFfgxx+FJ5bJYQz9FCtjLSX8OLv9GHpKBA3XDus8v2hK/tZal67IQOu8w1Dy0IxMUp5HkSbxSu5FsrF4q6fPK6EowSs4MLq8j3xMzNY/xEVhECSo5dkp9DIDBR9wrXcOMBNYukia0FF2b1UGHuwST/KDFSmz3xV7WAz2cgl+3Qi0RiSArNPWfPD3nMZdEAwlezB+wHh9uP3x/Y5xR37a4iFQ0+KvTvx6WZhGOcc45xzjnHOOdppkZbM/Dy0yMtmfeaaZPOEalvhzjnHOOLrTlVtpKN1yK8H3CPNXilDn22bWKJ87w7Cv3v4xlSUp+qJ9ycY39IR/xtUXFRmpAVJNAqXsCpYAsU09r0MR78r+5rfLr0J0xWEABUY5xWsijUOtrHl68P9way4QoSCLe49Xlg2zGE/MbNKu/FHmUBRLFsyu+SZ/fFGH1iyZhVOWPE6q6MZQ+m21uVq8Hc5HAKfaRNy0yMovwu65lIl7mWMJD1z9PEIMzAmumGUGq1BopEoOD4ha/KBupmJ++w1fzLyMTPWRJds5gK+L8tGsbqJaM0GKu5ze2cseV8uwL8Pp9KIBUBAuyfqYIbMKNEgTzP33GWzPs7aPMPIms84RIZrR6hXTWecIkM1nSo+atmfeFlrYcIcNyybUJg4oTNy+9KLYkn8YJV8w+THA2ql6seQtKbls2oTBxHk0DieJWsCNQNAhNksPBMhCepn3cqPnbrctzML5Fzu6IQzerW7TYPeL9X+dvmXGmsQyIcU3ZEFeqAjFbWXn4CU+rZWDSxxAAq7eVUZYP/TU/JMSC30zX+CwxHEarQ4yR9Ewuu1cnJ4ZR7CvQGOkg+fEZPx3QJkZRTOTK3hG575QYqbpT3ygxU0v0gGFCv4INSK9Nk7FQL7dcldNZ5wiQzWj1Cums4FUUlQROyjxpr8tGkKmIOpUYdeausEAA8ccp4ZBgmBiK7EkLsmJa96t9TbEi0t4TR/DValw8ry+CCuOn+LAYKkRwPSCFxOmxJCDd/HS2fLSz8o55CNcpj0RTh1U+2Tv0N1qifr3f2IlQeTrTN+lKBwA9b/++rwz33hzjnFt5xpGjpNxC69J/dNAQLsnYs8dd8X1DpDNaPUK6azzhEQN0byHYl+Jh4lxgfn4Pi1XIyJ4nIz4Rpn3h2jcc45yaAwhh4lxLiXEuJcS4nacc45xypKKeqlJlp8Y8GTiIQRJ8H262R533hzjnHOOcc45x1gICBdk7J2TsnZOyX+Fz/VDDB5PfSAK3ZFFhKXqifbN9OBkLoWebEedkdrxozblUz7w5xzjnFjjjjAYjuj592RssR2oG4c4sIV0+bZ7FDAYPfguG8uGH7r1mA1Glr1QfmeA5xzjnHOOi3WidqUDM0S4lxLiXEuJcjqwNS6Occ45xzjnHVy0yNm/LiXEuJcS4lxLiXmBzjnHOOcc4W3C047950Ad+2uIhBEn8FdqVdYp2rK4rhOO/bXEQgiT7nztaNxzjnHOOcc45xxeMz8gYT0Ian/9ORgVmyIK5YBa9KVvYGKXNZUPoFSx/BkAL2Vrz6d5Ez6UmUqYM3AMjLZn3hzZUfV3Q7xpipNRf7LUPSLVN67U18BafFuS3w/KCsta10GbcPkp59LWGNU42NDgtDGbZDcQ8S4lxLiX5q5d+PayRuOcc45xzjnIuZHEY+8Occ45xzkZYMtmfeHOOcc45xyIw6XKTLT4x37a4iEESe31H8zOrBEn8Y79tcRCCJP3kgakejnHOOcc45xzjnHWAgIF2TsnZOydk7JhCW/kN2t58o9DlQWfm/ORegslKwfKdAtuQBpwi5uVpZu8Uy3E4N9DiWDhTIy2Z94c44vy8JmpyKxDc7sPO8zagyKUW8u3pVxMuHYfOtaNkieZQE0+/8TDxLiXEuJnPfSQsnZOydk7J2TsnZuWmfeHOOcc45xzjnaaZGWzPvDnHOOcYWSei1hLZ9tcRCCJP4x3oBtukZEn8Y79tcRCCJP4x3H+OJ2TsnZOydk7J2Ts3LTPvDnHOOcc45xxfGfYtvZw9pO3jBdo9JK47RLPElWFeyCjEEUpDFzIy2Z94c45xZSA4fPu9nny6b7Gt8TNOWB9m7op9AlJIXZOydk7J2TsoBL1+XEuJcS4lxLiXHWgIF2TsnZOydk7J2gQw8S4lxLiXEuGFuUijv21xEIIk/jHftrO0afe4ApkZbM+8Occ45xzkYkhdk7J2TsnZOydiqkj0OSuOK6HEz/UpcwcxiuBkM3Q5xzjnHOLQQ/sCt7n7cGkhtIeF4ln+uP75+PqeQt6VToF0xK0vD8WXF8GUJn2r7GZL2ZaowLiVfT2A11TTGuGUcUc/kcT73NyPMqWPy4lxLiWhFsblqQda4KOI6gnl6d16SrOkEiYphPovuFCKHp3bBgwp812OPs3aOgIF2TsnbcI+1ve6mRlsz7w5xzjnHOOcc45xzjnHORcyYYweJcS4lxLiXDC3KfLobbXEQgiT+Md+2s7RsHRIUINxzjnHOOcc45x1gICBdk7J2TsnZOyX5T8EgoSpjsvqSe7GwfngJkZbM+8Occ4raE/fB5vubgpt2gMF5F7hZ2hEr4tLbiOj3GQCZcesHMPEuJcS4lxLQZEZE7rnhJQP1fUdUis8C4ibKdtMjLZn3hzjnHOTQC7J2TsnZOydk8Zo1PvDnHOOcc45x1ctMjLZn3hzjnHOOVJtWkn8Y79tcRCCJP4x3re310SSQuydk7J2TsnZOyisaXEuJcS4lxLiXEfUnUu2LLHFbITuZbBtbTsRlEcu49JwIVeQXdsSOj4l4BvBRE5g6kp1CuIKzaF3yNNflxLiWg1nFSJexx+wpqepDZrwBIdL2k1z8neNlqGO4U5YzbTWL6+qS6RlNhsSYXDkOEP8qvFSMz7w5xzY/8f/l3GaAnTCLhOsDZSTQbXQTy0f5vQ3mw8W2bC1UyNgjzpxzjnHOPivr8zQylHoYkzCMc45xzjnHOOcc45xzjnHOOcc45xzjnHOOcc45UlFPVSky0+Md+2uIhBEjS8a0nE7J2TsnZOydk7J2blpn3hzjnHOOcc44ttVYQyj7DRm9ZeVBno82u3z0EPEuJcS4lxLiPO+2ZV3ex2gBgfh6EnxP+hnUSp1BdBIdDmHiXEuJcS4lxPwfagKxOydk7J2TsnZOydk7J2TsnZOydk7J2TsnZOydk7J2TsnZuWmfeHOOcc45xzjmO9446sESfxjv21xEIIk+l4MPR+bGWzPvDnHOOcc45yMSQuydk7J2TsnZOxXqk45eRpoIvNHL63wPDnSi96cuwSF0Q1Vb0QPFCrwz/CPLUZGWzPvDnHNkgZqxLr93zqJ7Aj6BC/Vuf67Q2UaKH4kHxJRAjqu+6FKvc0QOue/BtlSZMPEuJcS4lxc9oKqNAMCZGWzPvDnHOOcc5FzIy2Z94c45yMSROd594c45xzjnHO16q/ZOydk7J2TsnZHZYC/qpSZafGO/bXEQghtXGEMruWmRlsz7w5xzjnHWAgIF2TsnZOydk7Jf4p2FDFEFC0trQPWPW33j4s7BQzQam9iZOUOV0hTIhYl7YhxhzutW2+sMXJCZpSzJAuydk7FJU0syuhFU8eN/w+zOX7mYKIGVtRJwSuw/O8YR/MK2N3tM9lrLGG2hC98iLxQnoTsJLT6k9+MTbAkBICQErh3Wzk9udnLTPvDnHOOcc45xztNMjLZn3iMsGWzPvS2wuydk7FAAD+/2l1SQrZsQXGIgFVVo3DP7k0TP9t9kkU9UJXVGWWLjDwszPZWG9gTxMrFaAOxlfjes/cpiLNjNkby7wS/26bd4TaRU7TaeFmM9BePEbx5aGWVttMpsA76VRD0i/jGOVhompUad08b4YNqWN+tEYVU1zfugMjA6ytqoYCmfOjNlXt6PK/iJZDvD7fI65aN8iQVs1QDQW55QyKxXwrDrxUg5ezxvXc8JyCYvRpzvpN6z/CzBSe/Ypd2o2YswwAkqPiePCdybkXJJiWj4o1Oqd+inYYAmD1yrchs9Zsf3nZFyjGqn8KCXU5TkFDQHG20m48pOEMxP7YzVh8biEgR8iVueqCDBpSyfSM4ygsi9VWe2kkaBVdlkHgb+89gF6dh0SIbHAWM18VlOMAtypSOUd7j4P4sKL2tFNqgBF2DRUMEJ61auzS6jrRzgR2zsQsVKG7qL39T3aKG8LbIMyIzZ1IkC3jW8PJj4yiR/CbdBnqd2PtxDFzvbm2vmuntz1j+/tTVPb99W2YTmXiAeisKt23JGAzwRFOmIz6rqyfSI+V4lI/7CrQl2KFmHjuZenvqp9D47cbVxbls9dn+NTGGxYZk1WUfzt5qAojXw38ukfgOKRq7xlYzTkEhjgKV8rV+Ij5Xc7WWk61UMLIy2pZta0Sk9GHVYDoycYWH8cAgfqxjFMhifhZHuSrYXhAPFxbCRKPz7p7Zd76daQy4U+6oERYd/2UwbKN5J4sT7m3PF6dZ3F0HJC5D9zPD02t9UlMXmwetcDzLEyhm8qsL+m3ycedO4s8F6R4oRowLArMTw0WqayKnGaohcOil5unt8WGN1Hf9U7qvAu2/w/HCFOM8yhYlENBA+a0/n0cS1S6UiKNFZopaMRODJeBuDp6sMhenK3SYG9qzyQEL9Za5T1im4q2Rp+X8LK3pWMgfuP4/ukw7I1JULhksexbicZcHAUrfnBloWkUMhm75/XrqciAG9vdWjdqkAd9q9xsLC/I8ILv1IHBmjB1Nmr8EGIC21P+E0qwc4Fh8dH+eh2uKjZLq1dXJPp/VENtoVT8OTXxPclHzOkrRoznKhUMgS3kai6fL34XvjSpSiWESYKL98tZkOdegzW0DeEHM9iNZ6BJYT0yZEAqOf1CCQmD1x5kO05Q3TjdBPrDdgz9u0828oK8fXG+siSAA3K87h5WTjDKfV1vQ0B1/PQSVZwOorjud3hokxqf1daJDcPtSHUCRF+s9Lx8Zhm6YA8zY9SQHyAbFsxKvvNJ/EESiyzWEH5kLeil79n5MExBReBtZqFkdIbwZ+Wo9WHmDlVOgj9DqZ34UojtHXicBtjRAIvaYAJYXx4suCSfdQEl9Uwx4UwOn+N0/mIDTQaY+12ZWwl7Oc+HHqkgxIIwddN8VE6nDhaXgl3HzgaBLu70TeEQFELUi667p+iWF4MTedoh6iaGkSotVbfuv4A5muPdsJdpNVLlLGX9UWjTNLm0nuPUa6/DNxsrH2vZyCs4yP9oDJ8+EdxT2mczScJINZPiCkbZJX/dNVu2Zo7W6vNBxdQt2dw2SAAsmjH7qETkFEmB/K6+FtoMKNVQPQRpTaXoe0vfRAI6rcw0Cgs/GNKMj4H8IyctZ2ZN9f82oTqsguhPk57uRveUFeeFFsPwtxyGMx8+JhiSvzaB1HBRyu/XChbeuKb8iXjjQTvPNJLPZzgw+mJR+CkwGgy2M2jqdAwAFaZEidjS9CNFOoQg/+S5b/0RPJzhMFdmm5Wa26JTpEZaCA/v36t8Rf5Ryzn8kJwaoT8ogHARQCAGNEAAAANXxRsOcPjSgHB1eBpBWQhFvjkWazgvhE7KxsXvPLC1TCg+hMLeoxtJ1c1ir3r/uvqrT/IMW2OYAJX5ZMp5ewcW0NDk/M/hLLfvzhGiBArZ4JxP7GAbegrdemP3hxD5nbVrylRIckSxLcel9odeTUNLDundRy2DaiShFKZyNcXRP/YpVQm7WO9hSXXLlfSCHQOnilu0JS6IaPWPT54/g6KfyOqEyHZKnX79w9FCiLL/OvTi6Q9TWiiCqEJB9fbi4HMR3wWMm8o/QNNqKWM5Co1nRD0/FHM4bA+PZqn/91wIa3G1gDFk9Oy2+eANBo637GBmeoOUrE7l0T/ZClOIeKeyHS62AFsnsxcxkWXstMG3oVvWTV3I60wBsC4L30ZMSXH0Z4I+Mt5KVc6+9s5UveCOVV8MzhY1lH4+n6APfK36b/OZqSHQQ8z5y8VmrK2WB4ZHrDqssnlbQ6Xg0gpi6OTJj54hXgYGB1dLjLlMbU9SPe75PkKth42TGJENsEPQ5SerjZX3I+Qo9drIeYj610fOgeViCCX4PVn3xc/gmEd8sTWG9UARlizbp6kAWfTJYbh1zCqDLaJ3yWFDyBS4pZa5KwIae6OUXtI8fs4LPZtdz80yeJ4h8Z36+QbmAfqGgB5qpskixeWEbt4eh/3Lp9OWdM63EgMA3B5sbMsj24cRBdPllbOxbxqPqUDzc2Utq0XwxkNgkAQKxIsi0364BWZpSOLTi+44dVryvlzrGmp+HU4OMiUQY1ifpA2d9/ux0Z1tuNfkZskeVlFA1/z5nYYhQA4+2BeOcVK6FWVdJrXnjH4ctiw4WEB3jxCarXhZ0I7mMWhY7nQqAOc7WOUWx+Acaxcz5+Yljbe8DudCvkVDTVqgTcnJevxzhdl1V7iYWi4YvCdAKD5j/iIUiGvWqai3Qh6mX80/zHzU+EPLOAO+k3EILyS8C/EuJ8qjk+itLobCERQDpqqmcPiZ9wa2X6Qm5+ev+s3yt1uVPfR3xp0GRYJZRm6zljreudvMu9PPHghqu/zPiFf1O6YIsCzc+DVOXgwRaR6T4mTo9ukZrediQLNo8zLGDvKp6eroydXXYQF4xvsOz17j6FmPeSdZn5dgYhrZwoiE5y/F6ReAVOamVXxiYfehm0m8yN0Boh8KFlLWhEoD1k7JL5ZBNqTPdfnT4xQRJ/6ZgkgozigKFUNg68hpcSRXjRThrwP2uydjC5722E36F3NfAUNgj0eHsSEcAcABbBlZcQMLOe6di6aVPB5Np1aDoFjMuu16M0xq5lLUxbpHgvaGw6uapB6eunBpldvxEwsLX9Sqi4QCd3aLjRyZzBKWz5pgPPM7sWBOd2jeRtIubUkrpxue9pVMjTUUYaM7ZaxEu7GFIpGt+E4E2kyrlWjawoSgc9nZ/PfFQFTlExc1SrChJpb03+FywLnII9IvkgTdg9mv86cm48SrsDZCyvPGGn51lBzXgkldwyc3V9sTYXsdORBwhlPGSTuo4DU6Xa9XMmwVZqWXw9P+vWkv/8/wPujbkgDadIwgKJP+PHrf/VDoBSERW1xQI285uRE2n70lCac/w89tWRWBPwlYyNEPmiqGhdeVHb2IHvTayayDOOUcNv/fPfby1JYMvhhu89JBg2mSLerhpM2Grf73WEkfbl2EOXiH9ehypF9gX1jW84KmlzDZ/I/s5R8JFFqs2uIf32aEU5R9PpOEKFofdGiowQV7NWt6eqUY/zudMBHFWnvXc3I41ub1e54d0J5NhvAqxVKsO3n9z3X6BC9AKtBXtAVxVP9RYxHRnWGBcuEs/kYbEMAbrFDaS3ixTM3oA0PI4cOgLBGsv7vFYomXLU4xD8jaHT4kF4krlVSoDFAt3mUOF3MIzjn2uFICKG4p0+7zSXX1k5GTq5L/vpRwxnbRpMmjDS5rjiGXyiT1P0/D9Ux7HsgHj2a2mKnk82nZjQZY14xJdPSCDbHGMvDrjcRzuD8A61j84Ajlc829SXhudBjoNakDfJ0gQTaBEHXemM1oRCdHQnpiiGeLOGLtcAxYBpgbZ1zCq8DcP5S/4wihVclzhwSVbgZ8+eXeutCnzq02Ep+MJl0ngPf/ALM9idN/je7qkF3ED4LgLdG3Xh3wnHgVwSfLqBshAh9m1KH92to6stUUQaTw57DSQ2eynUM2q9QnUR56NRHYt71pwS1kU4N7vyqBK7ztCw9/GnZwz+ZrLrnfJzzktiQ5UdFlSWcPvAyLEV/UVVJ0C7pcjCwrk6oFJd2BFoTTd6jtpIUdsqH5ZdrXDZqtHkYW1aAHl9OIEtjJAcFjBrJy3HfKftbpSgkC3dBhmqfye/BGb6eLn2I50Je7jRGSVrugdT3JqI3+Hqztkm8eF/Agq7wxjpOUHpRfSb7iQ0bcZy7UnGUqSJta59o/w2jLJrHxNqhkrvFT5tZWqkEUBs1XMw6GZIy02603xAhsNv8N7HLcoY+FJlRY4m6l0c+K0Qz+dDhd5Es2WuIo6MlCsCt6+6G4dw89FOlz9ezuv489/SuUuOu5Wyaju/JR9hl+pWVUeaHOUobvxk04XjFiYk45TcGo8sWA8C+hJyiIlnUz1gGE9b0KvLalrzE/IS6AIDgZCVsEm8Yaf4ysu7Z9GzHuJlnOKvY+uRaLRIAdpsXNOtJDSzQwvreJYVQ6+1eW8ugpU55eTtMLpR+NEt/hoXZl+zb9N/vHTPR2idNcGDW8CX3fYnUOFLIY2rfFwZjDCvnkPrpqS03RTL8FD1OsKnjWm+jSI+5Qw0KxWJm2YbXrwLd7jNY5STGsdx0j+J8F5zICY55gBCU0J0q0zi4bdbRv74ASUgroRDJSogW+IQW0wWbI23/wTykligNbvEeUusYyekqneKaCGHOw4038W8v+lIJNK5yJ498z1q2FYF+VZacHJvHUmvkF12md0SRKFygNxWtimXf2FDfConagrsd4b96D37Ga8GH+jD0T73xH1VZx0ljKwc7LG6v/CUKx7IQePanahPA0AMHQu0wzD5Rrsf5y/uPlmhy9XE/4AiiaYzFSy4y6yHWC1hC0CbZSOn+l5cmuGzeP5iPpgn4xS80kF852KkGO6YtCB7HCxAHldmcGezOct0ZZ9MppQ4fj61Kz0tfBk9Hz3hBd6eKIZS96vpzucTSrk/OVxwfpvrvC2gnnESx8VHbqHYc+QY1hjk9Kw+K2O9RV2eZBmlCRbk/t9FN8hxXKnXfSflvvHa9SZhhsod3bBYUA1heiduyI9E3SCojltLdPKE/gQvxFqwZrBH/NdCdHV8co+vDXQn3d3Kde1j/K5WnKc/RWd/35Mmfg0fTDBAwbVfbk/xDKA1kYsmBW3MqHlSrfgzVonSD3PgR08kSy2qHIWwgWQcCC0LRmVf8A2KNbKG7I/kxq9KxYpRJABkUyjArb4/vCT26VfKbhrNBO4edEfO9OLfLG3JN874DCwPmFYNTBZicsw8o8T4u/HYxStergXwVrZhoCoCuPYvOBwNisho3rvPWxLFKPlNM/m/85w4g+YsNYg5ArW6W9P+78xgScEel7E2XOYi6k3VCGV3/t2YYzHpskI0VzBYOrB6saax7+waRIMz0+Ex/IKhOhTW7ilIwa0feGq6OiQ+0m5y+e1LRGfpN3ul2VlonHzpbZetvjP7AqozZL4dH/8alDbHM6J5NgX9ilL0/1qUbc5kN+xmJ5RHuUCK5xjGWQvF+Jl6OWKAkXIvIUlkMw7xrbBm9e1yO6XD175f2JlBJ6rdplWEtq7BLjx2TkKMoG1wqNH2ginDxERGPwx0HX8SIfoPjZ3v5gWm59gOaeo+XpzKmIZ8nzXMppvD9Dam8LXAVwGfIIEi4TgyBSB9wd18u4gIYED6SuMAAAAAAFzr7mzJ3N7Xa+I2B/PI1380l+IFrgSNz5wQA79EHuKOHmMU5noCKNv24n7RgEUzWdxPjhaKLNLrN9U/Z3WQp6IHvnXFvplCHcRaO6eoczZIZldGXuAw+7vUvXNXm8qeHRX9LMN11Gj05A93V5fQKucFSDUdU/1Tva+63KdL2XDmF12WkFq6sRjJPN93vE5HLYWhlo6N+Bj7OVgKVAaSIz1xHYs4zqTRh7zOzH2Zv2eRR6JMwDheJjX9Idxjf4XoVgCZAczEIfASEBR5hPZJ8lVcSwXsy1MBaXhchKuWGDwS/uTOb75WmEDg8eWMmUHt06ZPZjV14HgzkGBsYE4ufjYvbjHFzjFRaRiXoBgHVGv3O6wbq+GdCaMPqRLcH3Y1aDI29Z0ws4RTLhfektFNR9dRQnWk4WMcT54Cvr82VABw0ys7yQVwa6MrdyJ5gQq60TMVi1Bb15k6wXrOwuWkFzxqO5AHHp0t/icGH3me88w52CmnnWiBy0YQ6rBCZM9SZSIQi0pkWodM0gr0q061BQdMfeFMiNtKF6tpF4vflmtVXpRCpk9vmA+CP+1d6VAR4iCp9xK3rmTXajpAHCd6L5mJjIeAwumUJa/GogIiIBp7NfKZKckGu+UdCkzZqxCVnwQOHjCDRr0deSMKmAEoCAAFlbdRW6HmFArlVsVT/ps4C6EziJwdWedu6aoqaB7sTkX1kJEKB+k0s1F4ZhaFV/PBfZaMN5D2X1G78qu7DR+NYnxAIk7VbNedN6KncA3IZSLaharHJArlRQ+OJpz9VURUFOaK+DfKq67zc1iz1uq/HPaNhscG55robGLKxb8nthOfGLtOPCZi0wY+EFH2suF9e6XSBo0Cbd+Zvvj7coo7wXuEYev39XfEas85xCEU6lYIcEpqwJizcNYadke5rzWmyEJwmL/YZayirpsIRnRK9K4iqHXFTHM9wOxqERFVghun5Ov04JtzIAwy1lFXTYFIYhuQXvWp33r0zRhwn8VGytfB3vCic8gyGqZzK2UpYOHWhMakxOcnideFhf1dyxyKf9On28QG8+BKfX3KiiwXfPZ9Wp7Bj99S20bO1vkKtxHVC4ZlqZOTIGxV7pZKOyKIV8wfq0tu38tIRrTXJogwBlXnWJzndLY7jYjyyoY0GeZoW/DclNbTIGrF8oNbdmRjCVyav+o+MtlYjovMlpCfhc6wb4BYNTded9/JJwAtohFpwe2WuszEgD4peA2LooWJh5lZFY/DNOEqiNouxUBoUOKfyvEKUNeQb3WJZC2CYFNomcsHU/W+0D+1Ql6g62dHYeQhtaRfWbaz4BLNmA6z4SAlVH+pvNAgJ6urgH9GE5EbPxZ+vrwzedcEKxSa/OY0ozTxDUQZF6sQqXF5ush2jRxVJQ7RbIqADIDaQJdM0pbUl+UUcLEyrcLf2kKLN8tM/E3mtu/A/hXCA+QgFSCA4Qb4AAAAAAAAOxkVLLA6FalumzSwRUlXFSrTv66893194fLhJEdymtDsmWDf9GOy0MppW8segR+c91id09OMPTnUfeBJpTkV1x3Q0T/ZffClrHWHAnR1ieDbpyn7P2WVx3jVEzR+STyXaj7iMrMIGfNvDY1O93W796gM1tWQQUdd07Y8JSF3dFdLatBSL7KY1y16h1Uo5DlUEYpYLqtddFGKx/TSYlNq1aXIm+LN9ka4bOLMhc6dTZuHqIsvN6DVTnp6Xo78fHFgaxI1USCIFDYIQu6U7WecOvO1T+ikqlbAULPJfFSg3j+dSxtV08wyt6pltpv6x9154lKHc/aG0zMAfzsmTUPp/IKtzQWgGSewuBsim5+yxFx1klmgDJYE2y5ifmHJjDhFBVZq95gO9GUzTORTqR5BZWrg77+DmpXeOIJ0yGQFIMnUSM8XfrgriYigScmn+PqevGYNk7EKxLRvqY53nh8f4wedxddlgMm+kAR/6u/5rd3Aqb4Atq/1xvuZRNWp54hYizB8QbPc+zyXleF2x2nbQZgHZUAE6cD1zsDww3eh5/PHTX9Rug2r2lIpuVouNxDFQjVGb8oY2zgqn59bxmaEJJR0nelzGuSCjogDi4IR4ri7gdzmAIg/64aEQAALs046AAAAAAAEjKdVqprSfUoloR+0YjBtt+qqpR6fA/JOMs3CSwz3TszMTzlwAo7p52TXfGxAqk4oBFc6L0/9aQjWCUmOZnsfEsYhtrIGf2YOUIu5PUcXcejjZKTsgBaYhODLTV/uIQzN/MHpNZoccxXunpPSJACpGedlFwG4orkxjoohxX237YBjOhKMwybPAwLiNl0Y0Z1Oamm45pTvvh2acNNEZW19rpjQmlwnIwYph631/p746A7tN7/xHtzxu3AsyrjqaEsVuTArxV+kbSuoqeUsVrWseixyj2Z/LBU4r3qssWejP3bKnAfpYxjoCNImDZVXX37ouc3GLUszTBwPVv7xRBxCLvftML2WNsugih0KUdRh7s8hDmLwQvpqSR9iIlOE2jOgiXqRAHeECxJvNepgn5EAAAAAFgJ3vQ/Lju5qH2fcWm5I97BFOCMm+h40sYp8Lwuzfv2uOiuI3QB6ju/J40sGWkQ7GhQLixlJhlx+L41mn5BL4H5iZC3rTjYKILTkoj9/X9Y08U7Lr52np0BMu4Pmwr7tbt+hmf20QCIshm7GoMSrPGZ36chFL/11EyAEsDoGtAqm/5b9wqdFtfDleTvng72LuDYs+W/UHAjNlVi3MDCCTLhlRkgWCvFvbb/36/vMx5Af7TyGod6vQ46GJwfhq/vgXiY5LV3lg1BQcOUnVz2DUnDHLQ7hFUyt2tWuzX34FXn7n2id52fkZdiQNz3td3pCRgCXgOB2rVRrXnHrGGRWwDGX6FNBkvmYm5UmJ36vMxjrT5E5c2rvZKVdJTAUafTHRF/lnLF87b3bCz2Rj07ossp5EgLcVkxzFzZTQXgpr7no7d2fc7WJqai2KmKv4TBGHk1YuEl4CJklJrwBKApUhIUFKf1mORs2why71S/UGCABwqBKjb3gjOzqNSCoy1qPwzZyQKDMDwmpdTYVk/mjZqZ+CI/cwPdEUkNiXcypmrDuIht4Ekp1UNUfFd8P+/KSsAioU/L3HKx8YH6liGjHu53fomAH2aeeQjU6lz/yCGqSMlEVDsUVmXFNPzDJHsEVRm3FScqjOyGADzUFSGHsL216y/7OQtU4I1THUqDpwOYui9c3MV3SYQ9B7EjmRtldJ8dfWsDhSyme5gKcCW++A8AoQgnxCaPwwenQwDQan9GXQEfSt6m6hINUjdWqYH0AW1sZlm+mLUhaXmZ9Y1Igbr85wTTtMuLRl+3TKA+eAdXfct/xyNQB1kslE7+1Dh9i78ARLuf+wwl49cTfJ/FGCGWb0p5kAanOjvG43OfkawZth3nr39NRIg4U0S8jJceD7BvMXP8+mK5NOpxKLMvVjKrgO7OXIKCJZPiwpTHBu8LADPmbZRpSuxSmH1Wu59WWta3h+AAfT8pMOuYKAngQAADDTf1ZfFAAAAABps7cXOWDIT21uzZzCes8u5dfbbfv8fouGE8NMY1WtGgzN2+JfKzgHD0tGCXUGterYQ/j+tuua4fuPt1Py9HKbZLA4oP/QpwhU2/euZLL8Lm1T5k4X3hul0pjizNYLnLlDkGJXTfFdd+DHPCtKx2LKrx7CHKIq+FrMbZ8V5I0jsdanxVVy9/OhG4NA5buObv7BmiXreXVdL+mFOBkz65tthn3zak4GWYK3BqnCzc0FmrHOi8TBY/MpA2XyDQf+PcqNwjOllorfPgIhJsYgkUMJ3VofFvSRdd9SfYUMvW2y6hGyhbweLhD5YoWR1AQ3ttO8FGvJjjM8isT+/qYQqjQdeajhKLF4Uw/f2owgQSBoKNAMeX5sqR755uSFjb/O6Q5h4rshuhSprqZ14H4Nc2OIGfgr5yp6sG+AZCwibpBkEx8POeBGTv3vQdznw5Q3E1o013wibuy1/6vFenaAeT7MkCAyogZ0QJzC67W2nAAAAADJTTHGLFkYYEmT/xR2kIdDiQxVlVmoR6IhRNit32GcROaD11+gB2c7/nXHRPTVXl8RadFTQ6puYzOOBnO3BhfnscB6stQzNdQPUmrT+o9THM1ovcc/HwOczT1UjICFvfywuzrT9c/Q9ca82bTnuPQkrP7c6h4E1M0b9h5lg8SLybaDb08gVe6cQHXljz5NH4V36b7tu1On4Rplsf2YDT80uR8iN5bs59p8qk6+7sxPlT9bILgc7qm4x+Y8LJXh/Sijeb+EIPiKq7gm8jrv2wh9E3xVnIY3pVFPdEy8RHv3RVKBDNr2bq5kNTBEMtzCWb1FcOlWdaZv+OZZEEQXecHt78qH0RXsETyP+I9MzlMeKCb3CdlrjWV8Q0BIQDxem0A5+8SNjRfK/fjT7bTYMYS8/5zX8bCF3AstHi7Hun7j2mgHRGyoG/QMWZQMLKZ2qJMeD4BJMo6pIXteDeixVtTWeF++w3Q4CCONedggAdwhzDS55zZnz5KLAQ6Lwur3TgjcI7fG68zeIejyv3O3KXhIM2SkKQ190vZbcSvR2Plbq7qaIuhZOol1RcT9qdk8Ki/vCYv4+ybdBz8A9oGc7+/aqaDRlUG1oqompbwlDNWdbSue77qGy6jDiEbD6qYxTKEDJr+rET4WwF242FMMW1sS41/HRDu+ZTCA7MYhBgk/lUWt3Lpa5znyX9t+XCf8i8nYIOHTpdqcAdlg1IcSiTzNEFM8PzA5OvO+Cqt9h5I+roYn9qlsIpzrH4bpF2v9YLU2+UcypAnA1EjAsgbRNWL3lzuTFglvf4f8mCsL5yEKOLIKwmUqne33BCdHAIBNrIaGERprnyAoW4tJ27PbktdLGBIQv++LZ4vZqjUT940e9Jk3/VLAS3RPmPXXWirKBrrIa7vKSAjEwYgSmk3oyxj9TrI0a6qksTAMJswrEqKzWeAKJGO0TOj2ZKaRE4K8KtUw/xoC3KWQuXAAf74DCB8MIgAALouRiAAAAAAZVnxZms2MPW8crvdd2R/1I6VIwt5KRKxNOG9Cht/oWhgJF4HUst1xLfBV+6Ci+P14px02TdfGgSTwME6noOBdW30SLwOpZbrhrKcvyMjiHaWJ710p8YbwhccwET9hMkV1NIf+iFhelOdx81xIHSGcV+xgoaYS3GKT64FDRQrktzqBo1wXHWCz3rzE5Eno5TFIYrimNI/P+hFxHMaOQ+ZshFatmcVs0rf8z8qqgBd5UwVzkskj7GeMV+US2d6Z5qJPcPGM7vS1MAKXKx8FX/zdy0SD9QueiTV8VNIlTi6bwncNyFb1c1urgrWLUxswXo31K1hW6hR6rESheqifFewf6hBlC/mTjr/AQbJVe4TRYfxMRiqyfxezppbJyR0HHjdgBAoeEGs/QAgK6IEiCEvhddct19kYIAAAABHW/x5vSa5ukfZxvDxBf4TwW4i/+NUqC6mLPPffcrhahJR2FqHlyrKy4hqOeuV/VGhrzwh8yejXT7m8XDujw2p2gwv/5h7AIm8RSCQuQzdXiWPDVQquoS7mvMisgEE6ovwAHapJfT5VTM1Xo4lo/UUjOTC5LC7HJSvAepO0N+V9BQQGDvk2qpbDGgbwc2TuNS1rTDjWySgOoJcJxxOTXRHuEOdZ4KRfGJVSHKkYmq1ofFNzUTFr9tUH8CxBs4yL5k/6mSSwyXl4yvdwZbPeVVRiCP3tXs6rxWX1s0YEYLIVGss3smN59Ou4KARW9V9ji0Owc2gnFAKLDmC0se5074mNgBnN/BAmYLukRC4MkAIFsybJJiihf7AIBXJWfvpOHw+lkHlCYnobSTaHzU+GAiMmVysTm03tNYAR1xQ8MIkHd/mvm8aX7iP0zi9XJdF0cFTw3/zG+5R5DXeRWQi0iAyQgq53kftE7k4V3ADL4jVkckImNWDAEYaaBUuwa/XzTqgkGZ2jR252jIXIgRiyxOALxVkiBfj5llw0ZcML4KBvXWHN5L/wmZa6m07lUzJ9hXyNUoMIsz4JA2208U8Z0seaVt30rmzoW0+VLQhAGzs99rst2tuF6isuvx3xOJUbF+3yRVrrGDXXYnbXMuA2eWBSiRnz7RYwXDABTVNRBSLRmT5ccygAAAAAAPZK4wAAAAAAWucEOwz+wz+yyi6HGNh1Rurzf29slvC+JOljZLwn9jGCEaoPnFzQ6tx3q6rF6LLu96o3kP036kd8okV3ZQS+l40n7ZWE5jvRzdGMf+CZLJgdsqN50XufToZPyL6Ez51ROWfkslhP6L/PDCeyjDEw7RBrkdv+XRSRmfBZjH32Y0bv9plcS5o3hJI7EzUoSq4Y755+G57esxXKRWpwIEPUBzxA6u6fmabHygksTgyjpKVqYITgeLYaH1XVYvRZd3s/FxSADfr0gb4LM0e6WE5073xPW/54Ysq0bgUtHp5gJukxXHNsHefNnVR8oa8I2D95EDcrQXZrj2lMYY4ft/ticmT+MQeczkjl9jUae3HvlVkA8bJavcJHaF7bwdP1ZInd6ZPdO6c3ffLOqVjO4lt7dnVkm+zK1esijkM0t7whF/9Oy1mGtk2myMA1p5mkVd/ga71kwVGRON7XgyfRLLLesxO4GMCh/fR0zX31KzPLi+C5WRcxMFjVjtUprMm4ZCnfZCINGnyyjvwS7wb+5izlCwjSmeYSrfBRPV1QhnJX65qT5Ytrd5H5cTsW/GmU5U0iBe9BKjBGK2oSpB318fWXnBfx7g5FHvscrSH6ZI3zAsep85trBlVz8hYB2KfMJGvXht1SjrH1oKw1dBcYyG+t+68cP0wLvi4jOlfJlyduLMzRpd6PLQtvVBq0YcoXkwYJX1/RY0kMcfSx5YD6Gg2aFHPgpYHyQTnGjzMrdVa2oS0Frd/jjp/YURxh6+FxUazhRQhmc2Gaaigb0tb365B8I1rbWQvKSWvUD7y3gvLixte4UJYPaP3/QqAwzSIhXEA2Sc+bgx3VwZfUzEuB3pjYThZlkzTCOFLRDxUboL4BfWMzCpnKK/cYK1+ObBdGczP0vidxacYbpoHafrBhBItf1XNWjMuoDc4L9hwFl8nHpQYhB63uc4AumtjeekD+vfe8dRDxVz6vXK8abWrsabpL3DUUzmmykKRdG1guIpe4lhI+X84dA0mX+0GhpKAGaqTtHOQJmDtE65QD68mqO8hGA6lhPuRqdjTTKPy9AB8srHQgAAAAA",
+      "width": 412,
+      "height": 1774
+    },
+    "nodes": {
+      "1-0-META": {
+        "id": "",
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      },
+      "1-1-META": {
+        "id": "",
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      },
+      "1-2-META": {
+        "id": "",
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      },
+      "1-3-META": {
+        "id": "",
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      },
+      "1-4-META": {
+        "id": "",
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      },
+      "1-5-META": {
+        "id": "",
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      },
+      "1-6-META": {
+        "id": "",
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      },
+      "1-7-META": {
+        "id": "",
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+  "timing": {
+    "entries": [
+      {
+        "startTime": 718.53,
+        "name": "lh:config",
+        "duration": 175.22,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 719.37,
+        "name": "lh:config:resolveArtifactsToDefns",
+        "duration": 26.9,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 893.84,
+        "name": "lh:runner:gather",
+        "duration": 5492.52,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 932.88,
+        "name": "lh:driver:connect",
+        "duration": 2.51,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 935.49,
+        "name": "lh:driver:navigate",
+        "duration": 5.66,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 941.3,
+        "name": "lh:gather:getBenchmarkIndex",
+        "duration": 1003.32,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1944.73,
+        "name": "lh:gather:getVersion",
+        "duration": 0.43,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1946.83,
+        "name": "lh:prepare:navigationMode",
+        "duration": 82.49,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1955.63,
+        "name": "lh:storage:clearDataForOrigin",
+        "duration": 19.34,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1975.04,
+        "name": "lh:storage:clearBrowserCaches",
+        "duration": 52.57,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2028.69,
+        "name": "lh:gather:prepareThrottlingAndNetwork",
+        "duration": 0.6,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2036.31,
+        "name": "lh:driver:navigate",
+        "duration": 2995.78,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5034.44,
+        "name": "lh:computed:NetworkRecords",
+        "duration": 0.47,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5035.14,
+        "name": "lh:gather:getArtifact:DevtoolsLog",
+        "duration": 0.01,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5035.16,
+        "name": "lh:gather:getArtifact:InstallabilityErrors",
+        "duration": 0.37,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5035.19,
+        "name": "lh:gather:getInstallabilityErrors",
+        "duration": 0.33,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5035.54,
+        "name": "lh:gather:getArtifact:MetaElements",
+        "duration": 7.31,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5042.92,
+        "name": "lh:gather:getArtifact:NetworkUserAgent",
+        "duration": 0.03,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5042.96,
+        "name": "lh:gather:getArtifact:Stacks",
+        "duration": 244.35,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5043,
+        "name": "lh:gather:collectStacks",
+        "duration": 244.3,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5287.32,
+        "name": "lh:gather:getArtifact:ViewportDimensions",
+        "duration": 0.95,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5288.28,
+        "name": "lh:gather:getArtifact:WebAppManifest",
+        "duration": 1.27,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5288.35,
+        "name": "lh:gather:getWebAppManifest",
+        "duration": 1.19,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 5289.55,
+        "name": "lh:gather:getArtifact:FullPageScreenshot",
+        "duration": 1087.14,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6386.56,
+        "name": "lh:runner:audit",
+        "duration": 5.99,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6386.63,
+        "name": "lh:runner:auditing",
+        "duration": 5.78,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6387.37,
+        "name": "lh:audit:viewport",
+        "duration": 0.88,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6387.54,
+        "name": "lh:computed:ViewportMeta",
+        "duration": 0.29,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6388.4,
+        "name": "lh:audit:installable-manifest",
+        "duration": 0.87,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6388.66,
+        "name": "lh:computed:ManifestValues",
+        "duration": 0.31,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6389.39,
+        "name": "lh:audit:splash-screen",
+        "duration": 0.47,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6389.97,
+        "name": "lh:audit:themed-omnibox",
+        "duration": 0.42,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6390.51,
+        "name": "lh:audit:maskable-icon",
+        "duration": 0.41,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6391.05,
+        "name": "lh:audit:content-width",
+        "duration": 0.38,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6391.52,
+        "name": "lh:audit:pwa-cross-browser",
+        "duration": 0.24,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6391.86,
+        "name": "lh:audit:pwa-page-transitions",
+        "duration": 0.24,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6392.19,
+        "name": "lh:audit:pwa-each-page-has-url",
+        "duration": 0.22,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 6392.42,
+        "name": "lh:runner:generate",
+        "duration": 0.13,
+        "entryType": "measure"
+      }
+    ],
+    "total": 5498.51
+  },
+  "i18n": {
+    "rendererFormattedStrings": {
+      "calculatorLink": "See calculator.",
+      "collapseView": "Collapse view",
+      "crcInitialNavigation": "Initial Navigation",
+      "crcLongestDurationLabel": "Maximum critical path latency:",
+      "dropdownCopyJSON": "Copy JSON",
+      "dropdownDarkTheme": "Toggle Dark Theme",
+      "dropdownPrintExpanded": "Print Expanded",
+      "dropdownPrintSummary": "Print Summary",
+      "dropdownSaveGist": "Save as Gist",
+      "dropdownSaveHTML": "Save as HTML",
+      "dropdownSaveJSON": "Save as JSON",
+      "dropdownViewer": "Open in Viewer",
+      "dropdownViewUnthrottledTrace": "View Unthrottled Trace",
+      "errorLabel": "Error!",
+      "errorMissingAuditInfo": "Report error: no audit information",
+      "expandView": "Expand view",
+      "firstPartyChipLabel": "1st party",
+      "footerIssue": "File an issue",
+      "hide": "Hide",
+      "labDataTitle": "Lab Data",
+      "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+      "manualAuditsGroupTitle": "Additional items to manually check",
+      "notApplicableAuditsGroupTitle": "Not applicable",
+      "openInANewTabTooltip": "Open in a new tab",
+      "opportunityResourceColumnLabel": "Opportunity",
+      "opportunitySavingsColumnLabel": "Estimated Savings",
+      "passedAuditsGroupTitle": "Passed audits",
+      "pwaRemovalMessage": "As per [Chrome’s updated Installability Criteria](https://developer.chrome.com/blog/update-install-criteria), Lighthouse will be deprecating the PWA category in a future release. Please refer to the [updated PWA documentation](https://developer.chrome.com/docs/devtools/progressive-web-apps/) for future PWA testing.",
+      "runtimeAnalysisWindow": "Initial page load",
+      "runtimeAnalysisWindowSnapshot": "Point-in-time snapshot",
+      "runtimeAnalysisWindowTimespan": "User interactions timespan",
+      "runtimeCustom": "Custom throttling",
+      "runtimeDesktopEmulation": "Emulated Desktop",
+      "runtimeMobileEmulation": "Emulated Moto G Power",
+      "runtimeNoEmulation": "No emulation",
+      "runtimeSettingsAxeVersion": "Axe version",
+      "runtimeSettingsBenchmark": "Unthrottled CPU/Memory Power",
+      "runtimeSettingsCPUThrottling": "CPU throttling",
+      "runtimeSettingsDevice": "Device",
+      "runtimeSettingsNetworkThrottling": "Network throttling",
+      "runtimeSettingsScreenEmulation": "Screen emulation",
+      "runtimeSettingsUANetwork": "User agent (network)",
+      "runtimeSingleLoad": "Single page session",
+      "runtimeSingleLoadTooltip": "This data is taken from a single page session, as opposed to field data summarizing many sessions.",
+      "runtimeSlow4g": "Slow 4G throttling",
+      "runtimeUnknown": "Unknown",
+      "show": "Show",
+      "showRelevantAudits": "Show audits relevant to:",
+      "snippetCollapseButtonLabel": "Collapse snippet",
+      "snippetExpandButtonLabel": "Expand snippet",
+      "thirdPartyResourcesLabel": "Show 3rd-party resources",
+      "throttlingProvided": "Provided by environment",
+      "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+      "unattributable": "Unattributable",
+      "varianceDisclaimer": "Values are estimated and may vary. The [performance score is calculated](https://developer.chrome.com/docs/lighthouse/performance/performance-scoring/) directly from these metrics.",
+      "viewTraceLabel": "View Trace",
+      "viewTreemapLabel": "View Treemap",
+      "warningAuditsGroupTitle": "Passed audits but with warnings",
+      "warningHeader": "Warnings: "
+    },
+    "icuMessagePaths": {
+      "core/audits/viewport.js | title": [
+        "audits.viewport.title"
+      ],
+      "core/audits/viewport.js | description": [
+        "audits.viewport.description"
+      ],
+      "core/audits/installable-manifest.js | title": [
+        "audits[installable-manifest].title"
+      ],
+      "core/audits/installable-manifest.js | description": [
+        "audits[installable-manifest].description"
+      ],
+      "core/audits/splash-screen.js | title": [
+        "audits[splash-screen].title"
+      ],
+      "core/audits/splash-screen.js | description": [
+        "audits[splash-screen].description"
+      ],
+      "core/audits/themed-omnibox.js | title": [
+        "audits[themed-omnibox].title"
+      ],
+      "core/audits/themed-omnibox.js | description": [
+        "audits[themed-omnibox].description"
+      ],
+      "core/audits/maskable-icon.js | title": [
+        "audits[maskable-icon].title"
+      ],
+      "core/audits/maskable-icon.js | description": [
+        "audits[maskable-icon].description"
+      ],
+      "core/audits/content-width.js | title": [
+        "audits[content-width].title"
+      ],
+      "core/audits/content-width.js | description": [
+        "audits[content-width].description"
+      ],
+      "core/audits/manual/pwa-cross-browser.js | title": [
+        "audits[pwa-cross-browser].title"
+      ],
+      "core/audits/manual/pwa-cross-browser.js | description": [
+        "audits[pwa-cross-browser].description"
+      ],
+      "core/audits/manual/pwa-page-transitions.js | title": [
+        "audits[pwa-page-transitions].title"
+      ],
+      "core/audits/manual/pwa-page-transitions.js | description": [
+        "audits[pwa-page-transitions].description"
+      ],
+      "core/audits/manual/pwa-each-page-has-url.js | title": [
+        "audits[pwa-each-page-has-url].title"
+      ],
+      "core/audits/manual/pwa-each-page-has-url.js | description": [
+        "audits[pwa-each-page-has-url].description"
+      ],
+      "core/config/default-config.js | pwaCategoryTitle": [
+        "categories.pwa.title"
+      ],
+      "core/config/default-config.js | pwaCategoryDescription": [
+        "categories.pwa.description"
+      ],
+      "core/config/default-config.js | pwaCategoryManualDescription": [
+        "categories.pwa.manualDescription"
+      ],
+      "core/config/default-config.js | metricGroupTitle": [
+        "categoryGroups.metrics.title"
+      ],
+      "core/config/default-config.js | loadOpportunitiesGroupTitle": [
+        "categoryGroups[load-opportunities].title"
+      ],
+      "core/config/default-config.js | loadOpportunitiesGroupDescription": [
+        "categoryGroups[load-opportunities].description"
+      ],
+      "core/config/default-config.js | budgetsGroupTitle": [
+        "categoryGroups.budgets.title"
+      ],
+      "core/config/default-config.js | budgetsGroupDescription": [
+        "categoryGroups.budgets.description"
+      ],
+      "core/config/default-config.js | diagnosticsGroupTitle": [
+        "categoryGroups.diagnostics.title"
+      ],
+      "core/config/default-config.js | diagnosticsGroupDescription": [
+        "categoryGroups.diagnostics.description"
+      ],
+      "core/config/default-config.js | pwaInstallableGroupTitle": [
+        "categoryGroups[pwa-installable].title"
+      ],
+      "core/config/default-config.js | pwaOptimizedGroupTitle": [
+        "categoryGroups[pwa-optimized].title"
+      ],
+      "core/config/default-config.js | a11yBestPracticesGroupTitle": [
+        "categoryGroups[a11y-best-practices].title"
+      ],
+      "core/config/default-config.js | a11yBestPracticesGroupDescription": [
+        "categoryGroups[a11y-best-practices].description"
+      ],
+      "core/config/default-config.js | a11yColorContrastGroupTitle": [
+        "categoryGroups[a11y-color-contrast].title"
+      ],
+      "core/config/default-config.js | a11yColorContrastGroupDescription": [
+        "categoryGroups[a11y-color-contrast].description"
+      ],
+      "core/config/default-config.js | a11yNamesLabelsGroupTitle": [
+        "categoryGroups[a11y-names-labels].title"
+      ],
+      "core/config/default-config.js | a11yNamesLabelsGroupDescription": [
+        "categoryGroups[a11y-names-labels].description"
+      ],
+      "core/config/default-config.js | a11yNavigationGroupTitle": [
+        "categoryGroups[a11y-navigation].title"
+      ],
+      "core/config/default-config.js | a11yNavigationGroupDescription": [
+        "categoryGroups[a11y-navigation].description"
+      ],
+      "core/config/default-config.js | a11yAriaGroupTitle": [
+        "categoryGroups[a11y-aria].title"
+      ],
+      "core/config/default-config.js | a11yAriaGroupDescription": [
+        "categoryGroups[a11y-aria].description"
+      ],
+      "core/config/default-config.js | a11yLanguageGroupTitle": [
+        "categoryGroups[a11y-language].title"
+      ],
+      "core/config/default-config.js | a11yLanguageGroupDescription": [
+        "categoryGroups[a11y-language].description"
+      ],
+      "core/config/default-config.js | a11yAudioVideoGroupTitle": [
+        "categoryGroups[a11y-audio-video].title"
+      ],
+      "core/config/default-config.js | a11yAudioVideoGroupDescription": [
+        "categoryGroups[a11y-audio-video].description"
+      ],
+      "core/config/default-config.js | a11yTablesListsVideoGroupTitle": [
+        "categoryGroups[a11y-tables-lists].title"
+      ],
+      "core/config/default-config.js | a11yTablesListsVideoGroupDescription": [
+        "categoryGroups[a11y-tables-lists].description"
+      ],
+      "core/config/default-config.js | seoMobileGroupTitle": [
+        "categoryGroups[seo-mobile].title"
+      ],
+      "core/config/default-config.js | seoMobileGroupDescription": [
+        "categoryGroups[seo-mobile].description"
+      ],
+      "core/config/default-config.js | seoContentGroupTitle": [
+        "categoryGroups[seo-content].title"
+      ],
+      "core/config/default-config.js | seoContentGroupDescription": [
+        "categoryGroups[seo-content].description"
+      ],
+      "core/config/default-config.js | seoCrawlingGroupTitle": [
+        "categoryGroups[seo-crawl].title"
+      ],
+      "core/config/default-config.js | seoCrawlingGroupDescription": [
+        "categoryGroups[seo-crawl].description"
+      ],
+      "core/config/default-config.js | bestPracticesTrustSafetyGroupTitle": [
+        "categoryGroups[best-practices-trust-safety].title"
+      ],
+      "core/config/default-config.js | bestPracticesUXGroupTitle": [
+        "categoryGroups[best-practices-ux].title"
+      ],
+      "core/config/default-config.js | bestPracticesBrowserCompatGroupTitle": [
+        "categoryGroups[best-practices-browser-compat].title"
+      ],
+      "core/config/default-config.js | bestPracticesGeneralGroupTitle": [
+        "categoryGroups[best-practices-general].title"
+      ]
+    }
+  }
+}
