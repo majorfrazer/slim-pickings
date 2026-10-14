@@ -221,3 +221,176 @@ main > section p {
   padding: 2rem var(--gutter);
   color: var(--muted);
 }
+
+/* ---------- Phase 1: structure for the ported copy (the design pass is Phase 2) ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero__tagline {
+  font-size: 1.25rem;
+}
+
+.hero__where {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--muted);
+}
+
+/* Cards and columns stack on every width until Phase 2 */
+.cards,
+.columns {
+  display: grid;
+  gap: 2rem;
+}
+
+.card__art {
+  min-height: 0;
+}
+
+.card__role,
+.card__signature {
+  color: var(--muted);
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 0.5em;
+  border: 1px solid var(--brass);
+  border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0 0.5em;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  vertical-align: middle;
+}
+
+.tiles,
+.socials__list,
+.live-show {
+  padding-left: 0;
+  list-style: none;
+}
+
+.live-show {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.tiles {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.tile {
+  padding: 1rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+
+.tile h3 {
+  margin-bottom: 0.25em;
+}
+
+.tile__handle {
+  margin: 0 0 0.5em;
+  color: var(--brass);
+  font-variant-numeric: tabular-nums;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.releases {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+}
+
+.releases th,
+.releases td {
+  padding: 0.5rem 0.75rem 0.5rem 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rule);
+}
+
+.releases th {
+  font-weight: 600;
+}
+
+.quote {
+  margin: 1.5rem 0;
+}
+
+.quote blockquote {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.quote figcaption {
+  color: var(--muted);
+  font-variant-caps: small-caps;
+}
+
+.accordion {
+  border-top: 1px solid var(--rule);
+  padding: 0.5rem 0;
+}
+
+.accordion:last-of-type {
+  border-bottom: 1px solid var(--rule);
+}
+
+.accordion summary {
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.accordion summary h3 {
+  display: inline;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.socials__title {
+  font-size: 1.25rem;
+}
+
+.socials__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+.socials__list a {
+  color: var(--fg);
+}
+
+.handle {
+  color: var(--brass);
+}
+
+code {
+  font-size: 0.95em;
+}

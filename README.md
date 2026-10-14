@@ -11,8 +11,8 @@ CSS and JavaScript on Firebase Hosting; one Realtime Database path (`enquiries/`
 
 | Phase | Branch | State |
 | --- | --- | --- |
-| 0 Scaffold | `phase/0-scaffold` | built, awaiting the Codex check and PM merge |
-| 1 Content port | `phase/1-content` | not started |
+| 0 Scaffold | `phase/0-scaffold` | built (PR #1), awaiting the Codex check and PM merge |
+| 1 Content port | `phase/1-content` | built on top of Phase 0, awaiting the Codex check and PM merge |
 | 2 Design pass | `phase/2-design` | not started |
 | 3 Listen and Book | `phase/3-listen-book` | not started |
 | 4 Press kit PDF and share assets | `phase/4-presskit` | not started |
@@ -25,6 +25,7 @@ No build step. Dev tooling runs through `npx`; nothing is installed into the rep
 ```sh
 python3 -m http.server 8080            # then open http://localhost:8080/
 npx html-validate index.html           # validation (add presskit.html from Phase 4)
+python3 docs/checks/copy-diff.py       # copy diff vs docs/press-kit.md, anchors, site-map headings
 npx prettier --check .                 # formatting (markdown and docs/ are ignored on purpose)
 npx firebase-tools hosting:channel:deploy phase-N   # preview channel
 npx firebase-tools deploy --only database           # rules
@@ -43,7 +44,7 @@ manifest.json       installable PWA
 assets/icons/       placeholder icons until Phase 4
 firebase.json       hosting (public = repo root, docs and markdown ignored) and database rules
 database.rules.json enquiries: push-only from the client, never readable
-docs/               press kit (canonical), build brief, kickoff prompts, decisions, Lighthouse reports
+docs/               press kit (canonical), build brief, kickoff prompts, decisions, checks, Lighthouse reports
 ```
 
 The boat is not explained here either.

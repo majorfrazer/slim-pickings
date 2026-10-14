@@ -99,7 +99,7 @@ All outlets below are as real as the boat.
 ### Tech spec
 
 - 2 x turntables, 7" direct drive. Belt drive is "a sea-level opinion."
-- 1 x mixer Do not ask.
+- 1 x mixer. Do not ask.
 - 1 x monitor wedge, angled toward the horse.
 - Table height 1.2 m. The Captain mixes standing; MAJOR mixes at attention.
 - No CDJs. USB sticks are confiscated and returned at the end of the night, formatted.
