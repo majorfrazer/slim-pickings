@@ -11,6 +11,7 @@ This is a side project under Alf-E owner rows 24 and 25: one seat, no fan-out, y
 | 1 | 13 Oct 2026 | **The Press Kit tab is canon and `docs/press-kit.md` is its export.** Fraser's edits of 13 Oct stand: 45,000 records (was 4,000); 2 x 7-inch turntables; one shared mixer (the rank dispute); sets run 1 hour then oxygen (was 45 min); bottle-cap ban 1999; no paid meal since 2002; the name-origin paragraph deleted, so the name is deliberately unexplained; newest release a 7" + digital. | The chat summary of 13 Oct 2026 (Claude chat, PM seat), pasted to Claude Code by Fraser with the starter files |
 | 2 | 13 Oct 2026 | **"Restore"**: the blank Slim (the horse) heading and the social bio's "S. Highest DJs on Earth" were accidental deletions; both were pulled back from doc history before the export. | Same chat summary ("you said restore") |
 | 3 | 13 Oct 2026 | **The build brief of 13 Oct is the contract**: one-page PWA on Firebase Hosting, Spark plan, vanilla stack, the normal build (PM = Fraser and Claude chat; builder = Claude Code; checker = Codex), six phases with gates. | `docs/build-brief.md`, delivered with the starter files |
+| 4 | 14 Oct 2026, early morning AEST, session clock, not a message timestamp | *"continue!"* — after the Phase 0 report. Read by the builder as the PM's word to start Phase 1 before the Codex check of Phase 0 has run; Phase 1 is built on `phase/1-content`, stacked on `phase/0-scaffold`, so either phase can still be sent round. | Chat with Claude Code |
 
 ## Assumed by the builder seat on 13 Oct 2026, not decided
 
